@@ -1,0 +1,9 @@
+---
+applications:
+- name: cloud-foundry-simple-war
+  path: target/cloud-foundry-simple-war-0.0.1-SNAPSHOT.war
+  domain: cfapps.io
+  instances: 1
+  command: null
+  env:    MY_ENV_VARIABLE: 100
+    MY_ENV_VALUE_2: 200

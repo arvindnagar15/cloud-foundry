@@ -1,0 +1,28 @@
+commit changes into GIT -- 
+#pull request from branch
+git pull origin myBranchName (say master)
+
+# create the release branch
+git branch BranchName (say release branch)
+
+#checkout the local release branch
+git checkout BranchName  (say local release branch)
+
+#add chanegs into local release branch and 
+git init
+git status
+git add .
+git commit -m "added"
+
+#commit the changes into release repository
+git push -u origin(https://github.com/indiarocks/cloud-foundry.git) BranchName  
+
+#Merge branch into master
+# 1.checkout the master branch at local
+git checkout master
+
+# 2. merge releae branch into trunk at local (master)  
+git merge BranchName 
+
+# 3. push the merge changes into repository
+git push -u origin (https://github.com/indiarocks/cloud-foundry.git) master

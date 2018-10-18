@@ -1,0 +1,8 @@
+---
+applications:
+- name: simple-spring-boot-app-with-manifest-yml_new
+  path: target/simple-spring-boot-app-with-manifest-yml-0.0.1-SNAPSHOT.jar
+  domain: cfapps.io
+  instances: 1
+  
+  

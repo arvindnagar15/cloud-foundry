@@ -1,0 +1,8 @@
+---
+applications:
+- name: simple-spring-boot-app-with-my-sql
+  path: target/simple-spring-boot-app-with-my-sql-0.0.1-SNAPSHOT.jar
+  domain: cfapps.io
+  instances: 1
+  command: null
+  services:  - mysql
